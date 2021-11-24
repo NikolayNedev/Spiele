@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Game</title>
+    <link rel="stylesheet" href="css/style_cell_phone_throwing.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><button type="button" class="head_button">Home</button></a></li>
+                <li><a href="cell_phone_throwing.html"><button type="button" class="head_button">Throw your phone</button></a></li>
+                <li><a href="rock_paper_scissors.html"><button type="button" class="head_button">Rock Paper Scissors</button></a></li>
+                <li><a href="find_the_number.html"><button type="button" class="head_button">Find the number</button></a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div id="maindiv">
+        <div id="objectcontainer">
+        </div>
+        <div id="mainmenu" class="screen active"> 
+            <form>
+                <select name="planet" id="planet">
+                    <option id="earth" value="9.81">Earth</option>
+                    <option id="moon" value="1.62">Moon</option>
+                    <option id="mars" value="3.69">Mars</option>
+                    <option id="jupiter" value="24.79">Jupiter</option>
+                </select>
+            </form>
+            <div>
+                <input type="number" name="throws" id="throws" placeholder="Number of tries">
+            </div>
+
+            <button type="button" class="button" onclick="goScreen(this)">Play</button>
+
+        </div>
+        <div class="screen" id="ingame">
+            <input type="number" name="speed" id="speed" placeholder="Speed">
+            <input type="number" name="angle" id="angle" placeholder="Angle">
+            <button type="button" class="button" onclick="throwPhone()">Play</button>
+        </div>
+    </div>
+ 
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/Javascript" src="js/script_cell_phone_throwing.js"></script>
+</body>
+</html>
