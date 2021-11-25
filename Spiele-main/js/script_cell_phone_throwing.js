@@ -64,13 +64,13 @@ function goScreen(element){
                 document.body.style.backgroundImage = "url(\"../Spiele-main/images/ThrowYourPhone/earth_game_background01.jpg\")";
                 break;
             case 1.62:
-                document.body.style.backgroundImage = "url(\"../Spiele-main/images/ThrowYourPhone/moon_background.jpg\")";
+                document.body.style.backgroundImage = "url(\"../images/ThrowYourPhone/moon_background.jpg\")";
             break;
             case 3.69:
-                document.body.style.backgroundImage = "url(\"../Spiele-main/images/ThrowYourPhone/mars_game_background.jpg\")";
+                document.body.style.backgroundImage = "url(\"../images/ThrowYourPhone/mars_game_background.jpg\")";
             break;
             case 24.79:
-                document.body.style.backgroundImage = "url(\"../Spiele-main/images/ThrowYourPhone/Jupiter_game_background.jpg\")";
+                document.body.style.backgroundImage = "url(\"../images/ThrowYourPhone/Jupiter_game_background.jpg\")";
             break;
         }
     }

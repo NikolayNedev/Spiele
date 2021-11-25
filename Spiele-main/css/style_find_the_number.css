@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-family:'Roboto',sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-attachment: fixed;
+    background-image: url(../images/FindTheNumber/redandblue.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#009efa;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+nav{
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav li a{
+    color: rgb(0, 0, 0);
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+header{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.head_button, #popupButton{
+    display:inline-block;
+    padding:1.5em 1.5em;
+    margin:0 1em 1em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:bold;
+    color:#ffeaea;
+    background-color:#009efa;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+#popupButton:hover {
+    background-color:#005f95;
+}
+
+#popupButton{
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+}
+
+#maindiv {
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    height: 70vh;
+}
+
+h2 {
+  
+   padding: 20px 0 50px 0;
+} 
+
+.screen {
+    box-shadow: 0 0 .2rem #4c65c7,
+              0 0 .2rem #4c65c7,
+              0 0 2rem #4c65c7,
+              0 0 0.8rem #ee6448,
+              0 0 2.8rem #4c65c7,
+              inset 0 0 1.3rem #ee6448;
+    display: none;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2em;
+}
+
+.screen.active {
+    display: block;
+}
+
+#setMaxAttempts, #setMaxNumber, #userNumber {
+    padding: 10px;
+    box-shadow: 1px 1px 1px #777;
+    border-radius: 2em;
+}
+
+#errorPopup {
+    background-color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 10px #777;
+    display: block;
+    text-align: center;
+    padding: 60px;
+    position: absolute;
+    border-radius: 2em;
+}
+
+
+p {
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#startGameButton {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 1px 1px 1px #777;
+    border-radius: 2em;
+    width: 25%;
+    margin-top: 10px;
+    background-color:#009efa
+}
+#startGameButton:hover {
+    background-color:#005f95;
+}
+
+#findNumberButton{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 1px 1px 1px #777;
+    border-radius: 2em;
+    width: 20%;
+    margin-left: 10px;
+    background-color:#009efa
+}
+#findNumberButton:hover {
+    background-color:#005f95;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    background-color:#005f95;
+}

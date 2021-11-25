@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the number</title>
+    <link rel="stylesheet" href="css/style_find_the_number.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><button type="button" class="head_button">Home</button></a></li>
+                <li><a href="cell_phone_throwing.html"><button type="button" class="head_button">Throw your phone</button></a></li>
+                <li><a href="rock_paper_scissors.html"><button type="button" class="head_button">Rock Paper Scissors</button></a></li>
+                <li><a href="find_the_number.html"><button type="button" class="head_button">Find the number</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="maindiv">
+        
+        <div class="screen active">
+            <h2>Welcome to Find the number</h2>
+            <h3>Enter how many attempts do you want</h3>
+            <input type="number" id="setMaxAttempts" name="setMaxAttempts" onchange="setMaxAttempts()"/>
+            <h3>Enter how big should be max number</h3>
+            <input type="number" id="setMaxNumber" name="setMaxNumber" onchange="setMaxNumber()"/>
+            <div>
+                <button class="button" id="startGameButton" onclick="startGame()">Play</button>
+            </div>
+        </div>
+
+        <div class="screen">
+            <p id="message"></p>
+            <h3>Please enter your number</h3>
+            <input type="number" name="userNumber" id="userNumber">
+            <button class="button" id="findNumberButton" onclick="findNumber()">Play</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script_find_the_number.js"></script>
+    <script type="text/javascript" src="js/lib.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style_rock_paper_scissors.css">
+
+</head>
+<body>
+    <img src="./rock-paper-scissors-hand-game-rules-design-vector.jpg" id="bg" alt="img">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><button type="button" class="head_button">Home</button></a></li>
+                <li><a href="cell_phone_throwing.html"><button type="button" class="head_button">Throw your phone</button></a></li>
+                <li><a href="rock_paper_scissors.html"><button type="button" class="head_button">Rock Paper Scissors</button></a></li>
+                <li><a href="find_the_number.html"><button type="button" class="head_button">Find the number</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="maindiv"> 
+
+        <div class="screen active">
+            <h2>Welcome to Rock Paper Scissors</h2>
+            <h3>How many attempts do you want</h3>
+            <input type="number" id="counterInput" name="counterInput"/>
+            <button class="counter_button" onclick="readCounter()">Play</button>
+        </div>
+     
+        <div class="screen">
+            <div class="container">
+                <p>User</p>
+                <p id="countPointsUser"></p>
+                <img id="userImage" src="images/RockPaperScissors/neon1.jpg" alt="UserChoice">
+                
+                <img id="pcImage" src="images/RockPaperScissors/neon1.jpg" alt="PcChoice">
+                <p>PC</p>
+                <p id="countPointsPC"></p>
+                
+            <div id="imagecontainer">
+                <img id="image1" src="images/RockPaperScissors/Game1.png" alt="paper image" onclick="play(1)">
+                <img id="image2" src="images/RockPaperScissors/Game2.png" alt="rock image" onclick="play(2)">
+                <img id="image3" src="images/RockPaperScissors/Game3.png" alt="scissors image" onclick="play(3)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript" src="js/script_rock_paper_scissors.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+html, body {
+    font-size: large;
+    font-family:'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url(../images/RockPaperScissors/pinkandblue2.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#009efa;
+    display: block;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+nav{
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav li a{
+    color: rgb(0, 0, 0);
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+header{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.head_button, .counter_button, #popupButton{
+    background-color:#009efa;
+    border-radius:2em;
+    box-sizing: border-box;
+    color:#ffeaea;
+    display:inline-block;
+    font-weight:bold;
+    padding:1.5em 1.5em;
+    margin:0 1em 1em 0;
+    text-decoration:none;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+#popupButton:hover {
+    background-color:#005f95;
+}
+
+#popupButton{
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+}
+
+.counter_button{
+    margin: 0;
+    padding: 10px;
+    width: 20%;
+}
+
+.counter_button:hover{
+    background-color:#005f95;
+}
+
+.head_button:hover{
+    background-color:#005f95;
+}
+
+.screen {
+    border-radius: 2em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #e80cd0,
+              0 0 0.8rem #1ca7c7,
+              0 0 2.8rem #1ca7c7,
+              inset 0 0 1.3rem #e80cd0;
+    display: none;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#counterInput {
+    box-shadow: 1px 1px 1px #777;
+    border-radius: 2em;
+    padding: 10px;
+}
+
+#errorPopup {
+    background-color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 10px #777;
+    border-radius: 2em;
+    display: block;
+    text-align: center;
+    padding: 55px;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+p {
+    align-items: center;
+    color: #009efa;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+#userImage, #pcImage{
+    border-radius: 2em;
+    max-width: 25%;
+}
+
+#image1, #image2, #image3{
+    max-width: 15%;
+    margin: 0 8px 0 8px;
+}
+
+#imagecontainer {
+    margin-top: 25px;
+}
+
+#image1:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#image2:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#image3:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#maindiv {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+
+h2 {
+   padding: 20px 0 50px 0;
+}

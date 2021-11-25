@@ -1,0 +1,172 @@
+
+html, body {
+    font-size: large;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(../images/ThrowYourPhone/pinkandblue3.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#009efa;
+}
+
+nav{
+    display: table;
+    margin: 0 auto;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav li a{
+    color: rgb(0, 0, 0);
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+header{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.head_button, .button, #popupButton{
+    background-color:#009efa;
+    border-radius: 2em;
+    box-sizing: border-box;
+    color:#000000;
+    display:inline-block;
+    margin:0 1em 1em 0;
+    padding:1.5em 1.5em;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:bold;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.button {
+    width: 25%;
+    padding: 10px;
+}
+
+#popupButton{
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+button {
+    cursor: pointer;
+}
+
+#popupButton:hover {
+    background-color:#005f95;
+}
+
+
+.button:hover {
+    background-color:#005f95;
+}
+    
+.head_button:hover{
+    background-color:#005f95;
+}
+
+#maindiv {
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+    height: 80vh;
+
+}
+
+#speed, #angle {
+    border-radius: 2em;
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#throws {
+    border-radius: 2em;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+
+#planet{
+    border-radius: 2em;
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+}
+
+.screen {
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #e80cd0,
+              0 0 0.8rem #1ca7c7,
+              0 0 2.8rem #1ca7c7,
+              inset 0 0 1.3rem #e80cd0;
+    border-radius: 2em;
+    display: none;
+    max-width: 500px;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+#earth, #moon, #mars, #jupiter{
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#objectcontainer {
+    font-size: large;
+    font-weight: 900;
+    padding: 20px;
+}
+
+#errorPopup {
+    color: #000;
+    border-radius: 2em;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 1px 1px 10px #777;
+    display: block;
+    text-align: center;
+    padding: 60px;
+    position: absolute;
+}
+
